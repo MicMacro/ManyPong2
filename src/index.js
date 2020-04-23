@@ -19,6 +19,7 @@ let sketch = function(p) {
 
 	p.setup = function() {
 		p.createCanvas(p.windowWidth, p.windowHeight);
+		p.noCursor();
 		paddle = new Paddle(p);
 		score = 0;
 		dead = false;
