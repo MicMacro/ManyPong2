@@ -1,6 +1,6 @@
 {
   "name": "manypong",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "The second iteration of ManyPong",
   "private": true,
   "scripts": {
