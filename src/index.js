@@ -1,3 +1,10 @@
+/**
+ * @file             : index.js
+ * @author           : Michael M.
+ * Date              : 27.04.2020
+ * Last Modified Date: 27.04.2020
+ * Last Modified By  : Michael M.
+ */
 // ManyPong (c) by The MicMacro Group
 //
 // ManyPong is licensed under a
@@ -45,6 +52,7 @@ let sketch = function(p) {
 			p.text("Game Over", 0, 0, p.width, p.height/2);
 			p.textSize(shorterDim/40);
 			p.text("Press R to Restart", 0, 0, p.width, p.height/2 + ((shorterDim/20) * 1.5));
+			p.cursor(p.ARROW);
 
 			p.noLoop();
 			return;
@@ -68,13 +76,15 @@ let sketch = function(p) {
 	p.mouseMoved = function() {
 		paddle.update();
 	};
+
 	p.keyPressed = function() {
-		if(p.keyCode == 82){
+		if(p.keyCode == 82 && dead == true){
 			p.background(0);
 			balls = [];
 			dead = false;
 			score = 0;
 			p.loop();
+			p.noCursor();
 		}
 	};
 };

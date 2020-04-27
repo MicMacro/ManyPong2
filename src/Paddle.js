@@ -1,3 +1,10 @@
+/**
+ * @file             : Paddle.js
+ * @author           : Michael M.
+ * Date              : 27.04.2020
+ * Last Modified Date: 27.04.2020
+ * Last Modified By  : Michael M.
+ */
 // ManyPong (c) by The MicMacro Group
 //
 // ManyPong is licensed under a
